@@ -2,6 +2,9 @@
   <!--
   - Dynamically set liquid variables for working with URLs/paths
   -->
+  <!--
+  - site object refers to the one is defined in _config.yml
+  -->
   {% if site.JB.setup.provider == "custom" %}
     {% include custom/setup %}
   {% else %}

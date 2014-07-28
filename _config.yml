@@ -9,7 +9,9 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 #
 title : Yan's blog
 tagline: thoughts on development
-highlighter: rouge
+markdown: rdiscount
+highlighter: pygments
+#pygments: true
 author :
   name : 王妍
   email : wangyan4622@gmail.com
@@ -82,7 +84,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : ywangme
     livefyre :
       site_id : 123
     intensedebate :
@@ -127,5 +129,12 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-markdown: redcarpet
+#markdown: redcarpet
+#redcarpet:
+#  extensions:
+#    - hard_wrap
+#    - no_intra_emphasis
+#    - autolink
+#    - strikethrough
+#    - fenced_code_blocks
 excerpt_separator: ""   # Workaround for http://blog.slaks.net/2013-08-09/jekyll-tag-was-never-closed

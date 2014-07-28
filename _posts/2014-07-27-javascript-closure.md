@@ -10,7 +10,7 @@
 好吧，今天尝试整理一下闭包相关的概念。
 ##闭包是什么。
 看这段代码：
-```
+{% highlight javascript %}
 var foo = ( function() {
     var privateThing = 'joe';
     // “闭包”内的函数可以访问 privateThing，而 privateThing 对于外部却是隐藏的
@@ -30,7 +30,7 @@ foo.get_thing (); // 得到 privateThing
 foo.privateThing; // 访问不到，出错
 foo.set_thing ('a new thing'); // 通过函数接口，我们访问并修改了 privatThing 变量
 foo.get_secret (); // 得到 'a new thing'
-```
+{% endhighlight %}
 这里，`foo`中包含两个闭包：函数`get_thing`, 函数`set_thing`;这两个函数都维持着对外部作用域function的引用，因此总可以访问作用域中的变量`privateThing`。
 因为javascript中不可以对作用域进行引用或者赋值，因此没有办法在外部访问变量`privateThing`。唯一的途径是通过那两个闭包。
 然后我们就不难理解闭包的概念了：**闭包是指，内部函数总是可以访问其所在外部函数中声明的参数和变量，即使在其外部函数被返回了之后。**(Douglas Crockford)

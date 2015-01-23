@@ -5,12 +5,12 @@ layout: page
 {% for post in site.posts %}
 <div class = "card">
 		<div  class = "date_label">
-			<div class="day_month">
+			<span class="day_month">
       			{{ post.date | date:"%m/%d" }}
-      			</div>
-      			<div class="year">
+      			</span>
+      			<span class="year">
       			{{ post.date | date:"%Y" }}
-      			</div>
+      			</span>
       		</div> 
 		{{ post.content  | | split:'<!--break-->' | first }}
 	<div class = "read_more">

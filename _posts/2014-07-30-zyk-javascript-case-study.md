@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "zyk javascript case study"
-description: ""
+published: false
 category: "Javascript"
 tags: [javascript,canvas]
 ---

@@ -1,9 +1,10 @@
 ---
-                  layout: post
-                  title: "Javascript中的闭包"
-                  description: ""
-                  category: 
-                  tags: [javascript]
+layout: post
+title: "Javascript中的闭包"
+published: false
+description: ""
+category: 
+tags: [javascript]
 ---
 {% include JB/setup %}
 #Javascript中的闭包

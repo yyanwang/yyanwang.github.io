@@ -12,9 +12,13 @@
 - [题目]
 
 
-Given an integer n, return the number of trailing zeroes in n!.
 
-Note: Your solution should be in logarithmic time complexity.
+
+> Given an integer n, return the number of trailing zeroes in n!.
+
+
+
+> Note: Your solution should be in logarithmic time complexity.
 
 求n!末尾有几个零。要求时间复杂度是对数级别的。
 
